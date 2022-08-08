@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="w-full h-full">
-        <div class="w-full h-full flex flex-col">
-            <div class="w-full h-14 bg-white-paper grid grid-cols-7 gap-4 fixed z-50">
+    <div class="bg-cmt">
+        <div class="w-full h-full flex flex-col relative">
+            <div class="w-full h-32 grid grid-cols-7 gap-4 fixed z-50 bg-white-paper">
                 <div class="col-span-2 flex items-center">
                     <div class="flex items-center ml-4">
                         <div class="ml-6">
@@ -22,8 +22,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-3 flex items-center justify-center space-x-2">
-                    <div class="flex items-center">
+                <div class="col-span-3 flex items-center justify-center">
+                    <div class="flex items-center flex-grow">
                         <label for="" class="rounded-50 min-h-40 bg-cmt min-w-40 outline-none relative flex items-center z-10">
                             <span class="pl-6 flex pointer-events-none whitespace-nowrap items-center ">
                                 <svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="text-xs w-8 h-8 block"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg>
@@ -44,7 +44,7 @@
                         <a href="/profile" class="relative">
                             <button class=" px-2 flex space-x-1 items-center justify-center focus:outline-none hover:bg-gray-300 rounded-full">
                                 <div class="">
-                                    <img src="https://picsum.photos/200" class="w-20 h-20 rounded-full" alt="dp">
+                                    <img src="../public/img/icon-256x256.png" class="w-20 h-20 rounded-full" alt="dp">
                                 </div>
                             </button>
                             <div class="absolute p-1 rounded-full right-2 top-12 bg-cmt border-2 border-white">
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="" style="margin-top: 3.5rem; min-height: calc(100% - 4rem);">
+            <div class="" style="margin-top: 68px; min-height: calc(100% - 4rem);">
                 <div class="w-full h-full grid grid-cols-7">
                     <div class="col-span-2 flex justify-start ml-2">
                         <div class="w-9/12 h-auto py-3">
@@ -118,54 +118,10 @@
                     </div>
                     <div class="col-span-3 h-full">
                         <div class="mt-6 w-full h-full pb-5">
-                            <div
-                                class="w-full h-50 flex items-center justify-center space-x-2 overflow-hidden cursor-pointer my-6">
-                                <div class="w-28 h-48 relative rounded-xl shadow "
-                                    style="background-image: url(&quot;https://picsum.photos/400&quot;);">
-                                    <div class="w-full absolute flex justify-center" style="bottom: 13%;"><button
-                                            class="focus:outline-none z-40 w-10 h-10 bg-primary rounded-full border-4 border-white"><i
-                                                class="text-white fas fa-plus"></i></button></div>
-                                    <div
-                                        class="bg-white z-30 absolute text-center bottom-0 p-2 pt-4 w-full h-auto rounded-b-lg ">
-                                        <p class="text-gray-500 text-sm font-semibold">Create Story</p>
-                                    </div>
-                                </div>
-                                <div class="w-28 h-48 relative rounded-xl p-3 to-pink-500 shadow cursor-pointer"
-                                    style="background-image: url(&quot;https://picsum.photos/500&quot;);">
-                                    <div class="absolute"><img src="https://picsum.photos/100"
-                                            class="w-10 h-10 rounded-full border-4 border-white" alt="story"></div>
-                                    <div class="absolute text-center" style="bottom: 5%;">
-                                        <p class="text-white font-semibold">Saiful Islam</p>
-                                    </div>
-                                </div>
-                                <div class="w-28 h-48 relative rounded-xl p-3 to-pink-500 shadow cursor-pointer"
-                                    style="background-image: url(&quot;https://picsum.photos/600&quot;);">
-                                    <div class="absolute"><img src="https://picsum.photos/200"
-                                            class="w-10 h-10 rounded-full border-4 border-white" alt="story"></div>
-                                    <div class="absolute text-center" style="bottom: 5%;">
-                                        <p class="text-white font-semibold">Shihab</p>
-                                    </div>
-                                </div>
-                                <div class="w-28 h-48 relative rounded-xl p-3 to-pink-500 shadow cursor-pointer"
-                                    style="background-image: url(&quot;https://picsum.photos/700&quot;);">
-                                    <div class="absolute"><img src="https://picsum.photos/400"
-                                            class="w-10 h-10 rounded-full border-4 border-white" alt="story"></div>
-                                    <div class="absolute text-center" style="bottom: 5%;">
-                                        <p class="text-white font-semibold">Ovy Bin</p>
-                                    </div>
-                                </div>
-                                <div class="w-28 h-48 relative rounded-xl p-3 to-pink-500 shadow cursor-pointer"
-                                    style="background-image: url(&quot;https://picsum.photos/800&quot;);">
-                                    <div class="absolute"><img src="https://picsum.photos/300"
-                                            class="w-10 h-10 rounded-full border-4 border-white" alt="story"></div>
-                                    <div class="absolute text-center" style="bottom: 5%;">
-                                        <p class="text-white font-semibold">Antor</p>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="rounded-lg bg-white flex flex-col p-3 px-4 shadow">
                                 <div class="flex items-center space-x-2 border-b pb-3 mb-2">
-                                    <div class="w-10 h-10"><img src="https://picsum.photos/200"
+                                    <div class="w-10 h-10"><img src="../public/img/icon-256x256.png"
                                             class="w-full h-full rounded-full" alt="dp"></div><button
                                         class="hover:bg-gray-200 focus:bg-gray-300 focus:outline-none flex-grow bg-gray-100 text-gray-500 text-left rounded-full h-10 pl-5">What's
                                         on your mind, Shihab?</button>

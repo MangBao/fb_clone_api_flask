@@ -5,3 +5,27 @@
 .logo-fb {
     fill: #1877F2;
 }
+
+.col{
+    @apply px-8;
+}
+
+.row{
+    @apply flex flex-wrap -mx-8;
+}
+
+.container {
+    @apply mx-auto px-8 w-full;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
